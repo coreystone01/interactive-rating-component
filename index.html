@@ -8,25 +8,25 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
-<body>
+<body class="--very-dark-blue">
 
   <!-- Rating state start -->
-  <div class="wrapper">
-    <svg src="/images/icon-star.svg" name="star-icon"></svg>
-    <h2 class="prompt">How did we do?</h2>
+  <div class="wrapper --dark-blue">
+    <svg src="/images/icon-star.svg --orange" id="star-icon"></svg>
+    <h2 class="prompt --white">How did we do?</h2>
     <p class="prompt__content --light-grey">Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!
     </p>
+    <section class="ratings">
+      <span id="ratings-label" class="sr-only">Select a rating:</span>
+      <button class="ratings__button --medium-grey-bg --light-grey" tabindex="0" aria-checked="false" aria-label="1 Star">1</button>
+      <button class="ratings__button --medium-grey-bg --light-grey" tabindex="1" aria-checked="false" aria-label="2 Stars">2</button>
+      <button class="ratings__button --medium-grey-bg --light-grey" tabindex="2" aria-checked="false" aria-label="3 Stars">3</button>
+      <button class="ratings__button --medium-grey-bg --light-grey" tabindex="3" aria-checked="false" aria-label="4 Stars">4</button>
+      <button class="ratings__button --medium-grey-bg --light-grey" tabindex="4" aria-checked="false" aria-label="5 Stars">5</button>
+    </section>
+    <button class="submit" tabindex="5" aria-label="Submit Your Score">SUBMIT</button>
   </div>
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
 
   <!-- Rating state end -->
 

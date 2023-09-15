@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Interactive Rating Component challenge from Front End Mentor",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coreystone01/interactive-rating-component.git"
