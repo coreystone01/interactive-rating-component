@@ -1,0 +1,19 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "Interactive Rating Component challenge from Front End Mentor",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreystone01/interactive-rating-component.git"
+  },
+  "author": "Corey Stone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coreystone01/interactive-rating-component/issues"
+  },
+  "homepage": "https://github.com/coreystone01/interactive-rating-component#readme"
+}
