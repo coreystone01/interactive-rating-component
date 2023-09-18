@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Overpass;
+  src: url("https://fonts.google.com/specimen/Overpass");
+}
+
+body {
+  background: #121417;
+  height: 100%;
+  font-family: Overpass, helvetica, arial;
+  font-size: 15px;
+}
+
+.prompt {
+  color: #fff;
+  font-weight: 700;
+}
+
+.prompt .__content {
+  color: #959eac;
+  font-weight: 400;
+}
+
+button, .submit, .ratings__button {
+  justify-content: center;
+  padding: 1%;
+  display: flex;
+}
+
+.ratings__button {
+  color: #959eac;
+  background-color: #7c8798;
+  border-radius: 50px;
+  width: 5vw;
+  height: 5vw;
+}
+
+.submit {
+  color: #fff;
+  background-color: #fb7413;
+  align-content: center;
+  width: 20vw;
+  height: 5vw;
+}
+
+/*# sourceMappingURL=index.8353e49f.css.map */
