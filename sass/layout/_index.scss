@@ -1,0 +1,6 @@
+@use '../abstract/variables';
+
+body   {
+    background: variables.$very-dark-blue;
+    height: 100%;
+}
