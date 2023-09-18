@@ -1,1 +1,1 @@
-document.querySelector("submit").onClick(displayResults);
+document.querySelector("submit").addEventListener("click", displayResults);
