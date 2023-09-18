@@ -7,6 +7,13 @@ button  {
     align-items: center;
     padding: 5%;
 
+    @include mixins.layout('mobile'){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
     @include mixins.layout('mini-mobile') {
         padding: 6%
       }

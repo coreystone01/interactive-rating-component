@@ -21,7 +21,7 @@ body {
   display: flex;
 }
 
-@media (width >= 280px) {
+@media (width <= 374px) {
   body {
     font-size: 12px;
   }
@@ -36,7 +36,7 @@ body {
   display: grid;
 }
 
-@media (width >= 280px) {
+@media (width <= 374px) {
   .wrapper {
     height: 110vw;
   }
@@ -53,7 +53,7 @@ body {
   font-weight: 400;
 }
 
-@media (width >= 280px) {
+@media (width <= 374px) {
   .prompt__content {
     font-size: 12px;
   }
@@ -77,7 +77,7 @@ button, .submit, .ratings__button {
   display: flex;
 }
 
-@media (width >= 280px) {
+@media (width <= 374px) {
   button, .submit, .ratings__button {
     padding: 6%;
   }

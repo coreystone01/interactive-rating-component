@@ -11,6 +11,12 @@
         color: variables.$light-grey;
         font-weight: variables.$font-normal;
 
+        @include mixins.layout('mobile'){
+            @extend .prompt;
+            color: variables.$light-grey;
+            font-weight: variables.$font-normal;
+        }
+
         @include mixins.layout('mini-mobile') {
             font-size: 12px;
           }
