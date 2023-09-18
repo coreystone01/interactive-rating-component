@@ -14,3 +14,12 @@ button  {
     height: 5vw;
     width: 5vw;
 }
+
+.submit {
+    @extend button;
+    align-content: center;
+    background-color: variables.$orange;
+    color: variables.$white;
+    width: 20vw;
+    height: 5vw;
+}
