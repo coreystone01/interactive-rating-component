@@ -1,21 +1,25 @@
 @use '/sass/abstract/variables';
 
 @mixin layout($breakpoint){
-    @if ($breakpoint=='mini-mobile'){
-        @media (max-width: #{variables.$mobile - 1}) {
+    @if ($breakpoint=='mini-mobile')
+    {
+        @media (max-width: #{variables.$mobile - 1})
+        {
             @content;
+        }
     }
-    @if ($breakpoint=='mobile'){
-        @media (min-width: #{variables.$mobile}) {
+    @if ($breakpoint=='mobile')
+    {
+        @media (min-width: #{variables.$mobile})
+        {
             @content;
-          }
+        }
     }
-    @if ($breakpoint=='desktop'){
-        @media (min-width: #{variables.$desktop}) {
+    @if ($breakpoint=='desktop')
+    {
+        @media (min-width: #{variables.$desktop})
+        {
             @content;
-          }
+        }
     }
-
-}
-
 }

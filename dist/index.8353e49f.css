@@ -21,9 +21,28 @@ body {
   display: flex;
 }
 
+@media (width >= 375px) {
+  body {
+    background: #121417;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 20vh;
+    font-family: Overpass, helvetica, arial;
+    font-size: 15px;
+    display: flex;
+  }
+}
+
 @media (width <= 374px) {
   body {
     font-size: 12px;
+  }
+}
+
+@media (width >= 1440px) {
+  body {
+    font-size: 24px;
   }
 }
 
@@ -42,6 +61,13 @@ body {
   }
 }
 
+@media (width >= 1440px) {
+  .wrapper {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
 .prompt, .prompt__content {
   color: #fff;
   margin-left: 4vw;
@@ -53,9 +79,22 @@ body {
   font-weight: 400;
 }
 
+@media (width >= 375px) {
+  .prompt__content {
+    color: #959eac;
+    font-weight: 400;
+  }
+}
+
 @media (width <= 374px) {
   .prompt__content {
     font-size: 12px;
+  }
+}
+
+@media (width >= 1440px) {
+  .prompt__content {
+    margin-left: 2vw;
   }
 }
 
@@ -77,9 +116,24 @@ button, .submit, .ratings__button {
   display: flex;
 }
 
+@media (width >= 375px) {
+  button, .submit, .ratings__button {
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    display: flex;
+  }
+}
+
 @media (width <= 374px) {
   button, .submit, .ratings__button {
     padding: 6%;
+  }
+}
+
+@media (width >= 1440px) {
+  button, .submit, .ratings__button {
+    font-size: 22px;
   }
 }
 
@@ -100,6 +154,14 @@ button, .submit, .ratings__button {
   width: 50vw;
   height: 6vw;
   margin-bottom: 4vh;
+}
+
+@media (width >= 1440px) {
+  .submit {
+    border-radius: 50px;
+    width: 35vw;
+    height: 6vw;
+  }
 }
 
 /*# sourceMappingURL=index.8353e49f.css.map */
