@@ -36,16 +36,16 @@ body {
   display: grid;
 }
 
+@media (width >= 280px) {
+  .wrapper {
+    height: 110vw;
+  }
+}
+
 .prompt, .prompt__content {
   color: #fff;
   margin-left: 4vw;
   font-weight: 700;
-}
-
-@media (width >= 280px) {
-  .prompt, .prompt__content {
-    font-size: 16px;
-  }
 }
 
 .prompt__content {
@@ -75,6 +75,12 @@ button, .submit, .ratings__button {
   align-items: center;
   padding: 5%;
   display: flex;
+}
+
+@media (width >= 280px) {
+  button, .submit, .ratings__button {
+    padding: 6%;
+  }
 }
 
 .ratings__button {
