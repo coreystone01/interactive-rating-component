@@ -1,0 +1,34 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+body   {
+    background: variables.$very-dark-blue;
+    height: 100%;
+    font-family: variables.$font-stack;
+    font-size: variables.$font-body-copy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+
+    @include mixins.layout('mobile') {
+        background: variables.$very-dark-blue;
+        height: 100%;
+        font-family: variables.$font-stack;
+        font-size: variables.$font-body-copy;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20vh;
+      }
+
+    @include mixins.layout('mini-mobile') {
+        font-size: 12px;
+    }
+
+    @include mixins.layout('desktop') {
+        font-size: 24px;
+    }
+
+
+}

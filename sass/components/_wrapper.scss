@@ -1,0 +1,29 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.wrapper    {
+    background-color: variables.$dark-blue;
+    width: 80vw;
+    height: 80vw;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+
+    @include mixins.layout('mobile'){
+        // background-color: variables.$dark-blue;
+        // width: 80vw;
+        // height: 80vw;
+        // border-radius: 15px;
+        // display: grid;
+        // grid-template-rows: repeat(5, 1fr);
+    }
+
+    @include mixins.layout('mini-mobile'){
+        height: 110vw;
+    }
+
+    @include mixins.layout('desktop'){
+        width: 40vw;
+		height: 40vw;
+    }
+}

@@ -1,0 +1,12 @@
+@use '../abstract/variables';
+
+.ratings    {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin-top: -5vh;
+}
+
+#ratings-label  {
+    visibility: hidden;
+}

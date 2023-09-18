@@ -1,0 +1,33 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.prompt {
+    color: variables.$white;
+    font-weight: variables.$font-bold;
+    margin-left: 4vw;
+
+    @include mixins.layout('desktop'){
+        margin-left: 2vw;
+    }
+
+    &__content  {
+        @extend .prompt;
+        color: variables.$light-grey;
+        font-weight: variables.$font-normal;
+
+        @include mixins.layout('mobile'){
+            @extend .prompt;
+            color: variables.$light-grey;
+            font-weight: variables.$font-normal;
+        }
+
+        @include mixins.layout('mini-mobile') {
+            font-size: 12px;
+        }
+
+        @include mixins.layout('desktop'){
+            margin-left: 2vw;
+        }
+
+    }
+}
