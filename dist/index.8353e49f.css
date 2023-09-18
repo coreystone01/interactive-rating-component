@@ -37,6 +37,7 @@ button, .submit, .ratings__button {
 .submit {
   color: #fff;
   background-color: #fb7413;
+  border-radius: 5px;
   align-content: center;
   width: 20vw;
   height: 5vw;
