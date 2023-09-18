@@ -21,4 +21,9 @@
     @include mixins.layout('mini-mobile') {
         height: 110vw;
       }
+
+    @include mixins.layout('desktop')   {
+        width: 40vw;
+		height: 40vw;
+    }
 }

@@ -17,6 +17,10 @@ button  {
     @include mixins.layout('mini-mobile') {
         padding: 6%
       }
+
+      @include mixins.layout('desktop'){
+        font-size: 22px;
+      }
 }
 
 .ratings__button    {
@@ -38,4 +42,10 @@ button  {
     width: 50vw;
     height: 6vw;
     margin-bottom: 4vh;
+    
+    @include mixins.layout('desktop'){
+        width: 35vw;
+		height: 6vw;
+        border-radius: 50px;
+    }
 }
