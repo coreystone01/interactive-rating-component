@@ -6,3 +6,11 @@ button  {
     padding: 1%;
 }
 
+.ratings__button    {
+    @extend button;
+    border-radius: 50px;
+    background-color: variables.$medium-grey;
+    color: variables.$light-grey;
+    height: 5vw;
+    width: 5vw;
+}
