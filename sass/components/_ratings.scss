@@ -3,4 +3,9 @@
 .ratings    {
     display: flex;
     justify-content: space-around;
+
+}
+
+#ratings-label  {
+    visibility: hidden;
 }
