@@ -1,10 +1,16 @@
 @use '../abstract/variables';
+@use '../abstract/mixins';
 
 .wrapper    {
     background-color: variables.$dark-blue;
     width: 80vw;
     height: 80vw;
-    border-radius: 5px;
+    border-radius: 15px;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
+
+
+    @include mixins.layout('mini-mobile') {
+        height: 90vw;
+      }
 }

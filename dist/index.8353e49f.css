@@ -21,9 +21,15 @@ body {
   display: flex;
 }
 
+@media (width >= 280px) {
+  body {
+    font-size: 12px;
+  }
+}
+
 .wrapper {
   background-color: #252d37d3;
-  border-radius: 5px;
+  border-radius: 15px;
   grid-template-rows: repeat(5, 1fr);
   width: 80vw;
   height: 80vw;
@@ -36,14 +42,27 @@ body {
   font-weight: 700;
 }
 
+@media (width >= 280px) {
+  .prompt, .prompt__content {
+    font-size: 16px;
+  }
+}
+
 .prompt__content {
   color: #959eac;
   font-weight: 400;
 }
 
+@media (width >= 280px) {
+  .prompt__content {
+    font-size: 12px;
+  }
+}
+
 .ratings {
   justify-content: space-around;
   align-items: center;
+  margin-top: -5vh;
   display: flex;
 }
 
@@ -54,7 +73,7 @@ body {
 button, .submit, .ratings__button {
   justify-content: center;
   align-items: center;
-  padding: 1%;
+  padding: 5%;
   display: flex;
 }
 
