@@ -3,6 +3,7 @@
 button  {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 1%;
 }
 
@@ -17,10 +18,12 @@ button  {
 
 .submit {
     @extend button;
-    align-content: center;
     background-color: variables.$orange;
     color: variables.$white;
-    border-radius: 5px;
-    width: 20vw;
-    height: 5vw;
+    border-radius: 15px;
+    align-content: center;
+    justify-self: center;
+    width: 50vw;
+    height: 6vw;
+    margin-bottom: 4vh;
 }

@@ -12,20 +12,27 @@
 
 body {
   background: #121417;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
+  margin-top: 20vh;
   font-family: Overpass, helvetica, arial;
   font-size: 15px;
+  display: flex;
 }
 
 .wrapper {
   background-color: #252d37d3;
   border-radius: 5px;
   grid-template-rows: repeat(5, 1fr);
+  width: 80vw;
+  height: 80vw;
   display: grid;
 }
 
-.prompt {
+.prompt, .prompt__content {
   color: #fff;
+  margin-left: 4vw;
   font-weight: 700;
 }
 
@@ -34,8 +41,19 @@ body {
   font-weight: 400;
 }
 
+.ratings {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+#ratings-label {
+  visibility: hidden;
+}
+
 button, .submit, .ratings__button {
   justify-content: center;
+  align-items: center;
   padding: 1%;
   display: flex;
 }
@@ -51,10 +69,12 @@ button, .submit, .ratings__button {
 .submit {
   color: #fff;
   background-color: #fb7413;
-  border-radius: 5px;
+  border-radius: 15px;
   align-content: center;
-  width: 20vw;
-  height: 5vw;
+  justify-self: center;
+  width: 50vw;
+  height: 6vw;
+  margin-bottom: 4vh;
 }
 
 /*# sourceMappingURL=index.8353e49f.css.map */

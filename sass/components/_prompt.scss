@@ -3,8 +3,10 @@
 .prompt {
     color: variables.$white;
     font-weight: variables.$font-bold;
+    margin-left: 4vw;
 
     &__content  {
+        @extend .prompt;
         color: variables.$light-grey;
         font-weight: variables.$font-normal;
     }
