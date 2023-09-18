@@ -1,6 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  list-style-type: none;
+}
+
 @font-face {
   font-family: Overpass;
-  src: url("https://fonts.google.com/specimen/Overpass");
+  src: url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 }
 
 body {
@@ -10,12 +17,19 @@ body {
   font-size: 15px;
 }
 
+.wrapper {
+  background-color: #252d37d3;
+  border-radius: 5px;
+  grid-template-rows: repeat(5, 1fr);
+  display: grid;
+}
+
 .prompt {
   color: #fff;
   font-weight: 700;
 }
 
-.prompt .__content {
+.prompt__content {
   color: #959eac;
   font-weight: 400;
 }
@@ -28,7 +42,7 @@ button, .submit, .ratings__button {
 
 .ratings__button {
   color: #959eac;
-  background-color: #7c8798;
+  background-color: #7c87984d;
   border-radius: 50px;
   width: 5vw;
   height: 5vw;
