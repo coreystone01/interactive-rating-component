@@ -46,6 +46,38 @@ body {
   }
 }
 
+#star-icon {
+  background: #7c87984d;
+  border-radius: 50px;
+  width: 2vw;
+  padding: 2rem;
+}
+
+@media (width >= 375px) {
+  #star-icon {
+    width: 4vw;
+    margin: 1rem;
+    padding: .5rem;
+  }
+}
+
+@media (width <= 374px) {
+  #star-icon {
+    width: 4vw;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (width >= 1440px) {
+  #star-icon {
+    background: #7c87984d;
+    border-radius: 50px;
+    width: 2vw;
+    padding: 2rem;
+  }
+}
+
 .wrapper {
   background-color: #252d37d3;
   border-radius: 15px;
@@ -72,6 +104,12 @@ body {
   color: #fff;
   margin-left: 4vw;
   font-weight: 700;
+}
+
+@media (width >= 1440px) {
+  .prompt, .prompt__content {
+    margin-left: 2vw;
+  }
 }
 
 .prompt__content {
