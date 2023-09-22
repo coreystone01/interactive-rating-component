@@ -6,6 +6,7 @@ button  {
     justify-content: center;
     align-items: center;
     padding: 5%;
+    border: 0;
 
     @include mixins.layout('mobile'){
         display: flex;
