@@ -10,28 +10,43 @@
   src: url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 }
 
+.--very-dark-blue {
+  background-color: #121417;
+}
+
+.--dark-blue {
+  background-color: #252d37d3;
+}
+
+.--orange {
+  background-color: #fb7413;
+}
+
+.--medium-grey {
+  background-color: #7c87984d;
+}
+
+.--white {
+  color: #fff;
+}
+
+.--light-grey {
+  color: #959eac;
+}
+
+.--is-bold {
+  font-weight: 700;
+}
+
 body {
   background: #121417;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 100%;
-  margin-top: 20vh;
+  height: 100vh;
   font-family: Overpass, helvetica, arial;
   font-size: 15px;
   display: flex;
-}
-
-@media (width >= 375px) {
-  body {
-    background: #121417;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    margin-top: 20vh;
-    font-family: Overpass, helvetica, arial;
-    font-size: 15px;
-    display: flex;
-  }
 }
 
 @media (width <= 374px) {
@@ -43,6 +58,28 @@ body {
 @media (width >= 1440px) {
   body {
     font-size: 24px;
+  }
+}
+
+.wrapper {
+  background-color: #252d37d3;
+  border-radius: 15px;
+  grid-template-rows: repeat(5, 1fr);
+  width: 80vw;
+  height: 80vw;
+  display: grid;
+}
+
+@media (width <= 374px) {
+  .wrapper {
+    height: 110vw;
+  }
+}
+
+@media (width >= 1440px) {
+  .wrapper {
+    width: 40vw;
+    height: 40vw;
   }
 }
 
@@ -75,28 +112,6 @@ body {
     border-radius: 50px;
     width: 2vw;
     padding: 2rem;
-  }
-}
-
-.wrapper {
-  background-color: #252d37d3;
-  border-radius: 15px;
-  grid-template-rows: repeat(5, 1fr);
-  width: 80vw;
-  height: 80vw;
-  display: grid;
-}
-
-@media (width <= 374px) {
-  .wrapper {
-    height: 110vw;
-  }
-}
-
-@media (width >= 1440px) {
-  .wrapper {
-    width: 40vw;
-    height: 40vw;
   }
 }
 
@@ -147,34 +162,6 @@ body {
   visibility: hidden;
 }
 
-button, .submit, .ratings__button {
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  display: flex;
-}
-
-@media (width >= 375px) {
-  button, .submit, .ratings__button {
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    display: flex;
-  }
-}
-
-@media (width <= 374px) {
-  button, .submit, .ratings__button {
-    padding: 6%;
-  }
-}
-
-@media (width >= 1440px) {
-  button, .submit, .ratings__button {
-    font-size: 22px;
-  }
-}
-
 .ratings__button {
   color: #959eac;
   background-color: #7c87984d;
@@ -199,6 +186,34 @@ button, .submit, .ratings__button {
     border-radius: 50px;
     width: 35vw;
     height: 6vw;
+  }
+}
+
+button {
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  display: flex;
+}
+
+@media (width >= 375px) {
+  button {
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    display: flex;
+  }
+}
+
+@media (width <= 374px) {
+  button {
+    padding: 6%;
+  }
+}
+
+@media (width >= 1440px) {
+  button {
+    font-size: 22px;
   }
 }
 
