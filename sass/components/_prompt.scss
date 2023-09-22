@@ -3,31 +3,36 @@
 
 .prompt {
     color: variables.$white;
-    font-weight: variables.$font-bold;
+    font-weight: variables.$font-normal;
     margin-left: 4vw;
+
+    @include mixins.layout('mobile'){
+        margin-bottom: 20px;
+    }
+
+    @include mixins.layout('desktop'){
+        font-size: 24px;
+        margin-left: 2vw;
+    }
+
+}
+
+.prompt__content  {
+    color: variables.$light-grey;
+    font-weight: variables.$font-normal;
+
+    @include mixins.layout('mobile'){
+        color: variables.$light-grey;
+        font-weight: variables.$font-normal;
+        margin-bottom: 2rem;
+    }
+
+    // @include mixins.layout('mini-mobile') {
+    //     font-size: 12px;
+    // }
 
     @include mixins.layout('desktop'){
         margin-left: 2vw;
     }
 
-    &__content  {
-        @extend .prompt;
-        color: variables.$light-grey;
-        font-weight: variables.$font-normal;
-
-        @include mixins.layout('mobile'){
-            @extend .prompt;
-            color: variables.$light-grey;
-            font-weight: variables.$font-normal;
-        }
-
-        @include mixins.layout('mini-mobile') {
-            font-size: 12px;
-        }
-
-        @include mixins.layout('desktop'){
-            margin-left: 2vw;
-        }
-
-    }
 }

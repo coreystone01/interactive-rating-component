@@ -45,29 +45,23 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Overpass, helvetica, arial;
-  font-size: 15px;
   display: flex;
-}
-
-@media (width <= 374px) {
-  body {
-    font-size: 12px;
-  }
-}
-
-@media (width >= 1440px) {
-  body {
-    font-size: 24px;
-  }
 }
 
 .wrapper {
   background-color: #252d37d3;
   border-radius: 15px;
-  grid-template-rows: repeat(5, 1fr);
-  width: 80vw;
-  height: 80vw;
-  display: grid;
+}
+
+.wrapper > * {
+  margin-left: 2vw;
+}
+
+@media (width >= 375px) {
+  .wrapper {
+    width: 325px;
+    height: 360px;
+  }
 }
 
 @media (width <= 374px) {
@@ -86,15 +80,14 @@ body {
 #star-icon {
   background: #7c87984d;
   border-radius: 50px;
-  width: 2vw;
   padding: 2rem;
 }
 
 @media (width >= 375px) {
   #star-icon {
-    width: 4vw;
+    width: 15px;
     margin: 1rem;
-    padding: .5rem;
+    padding: 15px;
   }
 }
 
@@ -115,15 +108,22 @@ body {
   }
 }
 
-.prompt, .prompt__content {
+.prompt {
   color: #fff;
   margin-left: 4vw;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+@media (width >= 375px) {
+  .prompt {
+    margin-bottom: 20px;
+  }
 }
 
 @media (width >= 1440px) {
-  .prompt, .prompt__content {
+  .prompt {
     margin-left: 2vw;
+    font-size: 24px;
   }
 }
 
@@ -135,13 +135,8 @@ body {
 @media (width >= 375px) {
   .prompt__content {
     color: #959eac;
+    margin-bottom: 2rem;
     font-weight: 400;
-  }
-}
-
-@media (width <= 374px) {
-  .prompt__content {
-    font-size: 12px;
   }
 }
 
@@ -166,19 +161,29 @@ body {
   color: #959eac;
   background-color: #7c87984d;
   border-radius: 50px;
-  width: 5vw;
-  height: 5vw;
+}
+
+@media (width >= 375px) {
+  .ratings__button {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .submit {
   color: #fff;
   background-color: #fb7413;
   border-radius: 15px;
-  align-content: center;
-  justify-self: center;
-  width: 50vw;
-  height: 6vw;
-  margin-bottom: 4vh;
+}
+
+@media (width >= 375px) {
+  .submit {
+    width: 275px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
 
 @media (width >= 1440px) {
