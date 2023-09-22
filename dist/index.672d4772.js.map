@@ -1,1 +1,1 @@
-{"mappings":"AAAA,SAAS,cAAc,UAAU,iBAAiB,SAAS","sources":["script.js"],"sourcesContent":["document.querySelector(\"submit\").addEventListener(\"click\", displayResults);"],"names":[],"version":3,"file":"index.672d4772.js.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"","sources":["script.js"],"sourcesContent":[null],"names":[],"version":3,"file":"index.672d4772.js.map","sourceRoot":"/__parcel_source_root/"}

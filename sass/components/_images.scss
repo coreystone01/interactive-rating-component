@@ -3,15 +3,15 @@
 
 
 #star-icon{
-    width: 2vw;
+    // width: 2vw;
     padding: 2rem;
     background: variables.$medium-grey;
     border-radius: 50px;
 
     @include mixins.layout('mobile'){
-        width: 4vw;
-        padding: 0.5rem;
+        width: 15px;
         margin: 1rem;
+        padding: 15px;
     }
 
     @include mixins.layout('mini-mobile'){

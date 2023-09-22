@@ -1,12 +1,46 @@
 @use '../abstract/variables';
+@use '../abstract/mixins';
 
 .ratings    {
     justify-content: space-around;
     align-items: center;
     display: flex;
     margin-top: -5vh;
+    margin-left: 0;
+    margin-bottom: 2rem;
 }
 
 #ratings-label  {
     visibility: hidden;
+}
+
+.ratings__button    {
+    border-radius: 50px;
+    background-color: variables.$medium-grey;
+    color: variables.$light-grey;
+    @include mixins.layout('mobile'){
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.submit {
+    background-color: variables.$orange;
+    color: variables.$white;
+    border-radius: 15px;
+
+
+    @include mixins.layout('mobile'){
+        width: 275px;
+        height: 45px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 20px;
+    }
+    
+    @include mixins.layout('desktop'){
+        width: 35vw;
+		height: 6vw;
+        border-radius: 50px;
+    }
 }

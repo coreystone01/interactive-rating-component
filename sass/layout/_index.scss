@@ -1,34 +1,33 @@
 @use '../abstract/variables';
 @use '../abstract/mixins';
 
-body   {
-    background: variables.$very-dark-blue;
-    height: 100%;
-    font-family: variables.$font-stack;
-    font-size: variables.$font-body-copy;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20vh;
+// background colors
+.--very-dark-blue   {
+    background-color: variables.$very-dark-blue;
+}
 
-    @include mixins.layout('mobile') {
-        background: variables.$very-dark-blue;
-        height: 100%;
-        font-family: variables.$font-stack;
-        font-size: variables.$font-body-copy;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20vh;
-      }
+.--dark-blue{
+    background-color: variables.$dark-blue;
+}
 
-    @include mixins.layout('mini-mobile') {
-        font-size: 12px;
-    }
+.--orange   {
+    background-color: variables.$orange;
+}
 
-    @include mixins.layout('desktop') {
-        font-size: 24px;
-    }
+.--medium-grey  {
+    background-color: variables.$medium-grey;
+}
 
+// font colors
+.--white    {   
+    color: variables.$white;
+}
 
+.--light-grey   {
+    color: variables.$light-grey;
+}
+
+// font weights
+.--is-bold  {
+    font-weight: variables.$font-bold;
 }
