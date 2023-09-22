@@ -20,11 +20,13 @@
 .prompt__content  {
     color: variables.$light-grey;
     font-weight: variables.$font-normal;
+    font-size: 14px;
+    margin-left: 4vw;
 
     @include mixins.layout('mobile'){
         color: variables.$light-grey;
         font-weight: variables.$font-normal;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     // @include mixins.layout('mini-mobile') {
