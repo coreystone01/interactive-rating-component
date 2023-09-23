@@ -22,12 +22,27 @@
         height: 40px;
         width: 40px;
     }
+
+    &:hover{
+        background-color: variables.$light-grey;
+        color: variables.$white;
+    }
+
+    &:focus  {
+        background-color: variables.$orange;
+        color: variables.$white;
+    }
 }
 
 .submit {
     background-color: variables.$orange;
     color: variables.$white;
     border-radius: 15px;
+
+    &:focus  {
+        background-color: variables.$white;
+        color: variables.$orange;
+    }
 
 
     @include mixins.layout('mobile'){

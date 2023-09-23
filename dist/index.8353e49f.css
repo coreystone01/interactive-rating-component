@@ -174,10 +174,25 @@ body {
   }
 }
 
+.ratings__button:hover {
+  color: #fff;
+  background-color: #959eac;
+}
+
+.ratings__button:focus {
+  color: #fff;
+  background-color: #fb7413;
+}
+
 .submit {
   color: #fff;
   background-color: #fb7413;
   border-radius: 15px;
+}
+
+.submit:focus {
+  color: #fb7413;
+  background-color: #fff;
 }
 
 @media (width >= 375px) {
