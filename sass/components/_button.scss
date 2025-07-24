@@ -8,6 +8,7 @@ button  {
     padding: 5%;
     border: 0;
 
+
     @include mixins.layout('mobile'){
         display: flex;
         justify-content: center;
