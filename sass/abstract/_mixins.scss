@@ -1,20 +1,20 @@
 @use './variables';
 
 @mixin layout($breakpoint){
-    @if ($breakpoint=='mini-mobile')
-    {
-        @media (max-width: #{variables.$mobile - 1})
-        {
-            @content;
-        }
-    }
-    @if ($breakpoint=='mobile')
-    {
-        @media (max-width: #{variables.$mobile})
-        {
-            @content;
-        }
-    }
+    // @if ($breakpoint=='mini-mobile')
+    // {
+    //     @media (max-width: #{variables.$mobile - 1})
+    //     {
+    //         @content;
+    //     }
+    // }
+    // @if ($breakpoint=='mobile')
+    // {
+    //     @media (max-width: #{variables.$mobile})
+    //     {
+    //         @content;
+    //     }
+    // }
     @if ($breakpoint =='desktop')
     {
         @media (min-width: #{variables.$desktop})
