@@ -5,20 +5,8 @@ button  {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 1rem;
     border: 0;
-
-
-    @include mixins.layout('mobile'){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5%;
-    }
-
-    @include mixins.layout('mini-mobile') {
-        padding: 6%
-      }
 
       @include mixins.layout('desktop'){
         font-size: 22px;
