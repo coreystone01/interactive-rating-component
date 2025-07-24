@@ -10,11 +10,4 @@ body{
     align-items: center;
     justify-content: center;
 
-    @include mixins.layout('mobile'){
-        // margin: 20px;
-    }
-
-    // @include mixins.layout('desktop') {
-    //     font-size: 24px;
-    // }
 }

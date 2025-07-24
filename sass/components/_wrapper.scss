@@ -4,18 +4,15 @@
 .wrapper    {
     background-color: variables.$dark-blue;
     border-radius: 15px;
+    width: 20rem;
+    height: 25rem;
 
     > * {
         margin-left: 1rem;
     }
 
-    @include mixins.layout('mobile'){
-        width: 20rem;
-        height: 24rem;
-    }
-
     @include mixins.layout('desktop'){
-        width: 20rem;
-		height: 20rem;
+        width: 30rem;
+        height: 28rem;
     }
 }
