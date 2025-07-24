@@ -3,28 +3,11 @@
 
 
 #star-icon{
-    // width: 2vw;
     padding: 2rem;
     background: variables.$medium-grey;
-    border-radius: 50px;
-
-    @include mixins.layout('mobile'){
-        width: 15px;
-        margin: 1rem;
-        padding: 15px;
-    }
-
-    @include mixins.layout('mini-mobile'){
-        width: 4vw;
-        padding: 1rem;
-        margin: 1rem;
-    }
-
-    @include mixins.layout('desktop'){
-        width: 2vw;
-        padding: 2rem;
-        background: variables.$medium-grey;
-        border-radius: 50px;
-    }
+    border-radius: 50%;
+    width: 1rem;
+    padding: 1rem;
+    margin: 1rem;
 
 }
