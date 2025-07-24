@@ -6,20 +6,16 @@
     border-radius: 15px;
 
     > * {
-        margin-left: 2vw;
+        margin-left: 1rem;
     }
 
     @include mixins.layout('mobile'){
-        width: 325px;
-        height: 360px;
-    }
-
-    @include mixins.layout('mini-mobile'){
-        height: 110vw;
+        width: 20rem;
+        height: 25rem;
     }
 
     @include mixins.layout('desktop'){
-        width: 40vw;
-		height: 40vw;
+        width: 20rem;
+		height: 20rem;
     }
 }

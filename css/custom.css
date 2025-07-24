@@ -51,23 +51,18 @@ body {
   border-radius: 15px;
 }
 .wrapper > * {
-  margin-left: 2vw;
+  margin-left: 1rem;
 }
 @media (min-width: 375px) {
   .wrapper {
-    width: 325px;
-    height: 360px;
-  }
-}
-@media (max-width: 374px) {
-  .wrapper {
-    height: 110vw;
+    width: 20rem;
+    height: 25rem;
   }
 }
 @media (min-width: 800px) {
   .wrapper {
-    width: 40vw;
-    height: 40vw;
+    width: 20rem;
+    height: 20rem;
   }
 }
 
