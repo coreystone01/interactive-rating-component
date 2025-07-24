@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
     display: flex;
-    margin-top: -5vh;
+    margin-top: -3rem;
     margin-left: 0;
     margin-bottom: 2rem;
 }
@@ -15,13 +15,11 @@
 }
 
 .ratings__button    {
-    border-radius: 50px;
+    border-radius: 50%;
     background-color: variables.$medium-grey;
     color: variables.$light-grey;
-    @include mixins.layout('mobile'){
-        height: 40px;
-        width: 40px;
-    }
+    height: 40px;
+    width: 40px;
 
     &:hover{
         background-color: variables.$light-grey;
@@ -38,24 +36,20 @@
     background-color: variables.$orange;
     color: variables.$white;
     border-radius: 15px;
+    width: 17rem;
+    height: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.25rem;
 
     &:focus  {
         background-color: variables.$white;
         color: variables.$orange;
     }
-
-
-    @include mixins.layout('mobile'){
-        width: 275px;
-        height: 45px;
-        margin-left: 24px;
-        margin-right: 24px;
-        margin-top: 20px;
-    }
     
     @include mixins.layout('desktop'){
-        width: 35vw;
-		height: 6vw;
+        width: 17.5rem;
+		height: 3rem;
         border-radius: 50px;
     }
 }

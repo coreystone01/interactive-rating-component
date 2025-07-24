@@ -11,7 +11,7 @@
 
     @include mixins.layout('mobile'){
         width: 20rem;
-        height: 25rem;
+        height: 24rem;
     }
 
     @include mixins.layout('desktop'){

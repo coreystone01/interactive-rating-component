@@ -10,7 +10,7 @@
     }
     @if ($breakpoint=='mobile')
     {
-        @media (min-width: #{variables.$mobile})
+        @media (max-width: #{variables.$mobile})
         {
             @content;
         }
